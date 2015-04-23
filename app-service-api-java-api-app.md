@@ -228,7 +228,7 @@ The browser displays the home page that you saw earlier when you ran the sample 
 
 ## Next steps
 
-You've deployed a Node.js web application that uses an API app backend to Azure. For more information about using Node.js in Azure, see the [Node.js Developer Center](/develop/nodejs/).
+You've deployed a Java web application that uses an API app backend to Azure. For more information about using Java in Azure, see the [Java Developer Center](/develop/java/).
 
 * You can try this sample API App at [TryApp Service](http://tryappservice.azure.com)
 
