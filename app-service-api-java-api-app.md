@@ -158,13 +158,13 @@ In this section you run the application locally to verify it works prior to depl
 		17:25:49 INFO  JavaAPIApp runs at:
 		17:25:49 INFO    http://localhost:8080/JavaAPIApp
 
-5. Navigate your browser to http://localhost:8080/JavaAPIApp/
+5. Navigate your browser to `http://localhost:8080/JavaAPIApp/`
 
 	You see the following page
 
 	![][sample-api-app-page]
 
-6. To view the Swagger.json file, navigate to http://localhost:8080/JavaAPIApp/api/Swagger.json.
+6. To view the Swagger.json file, navigate to `http://localhost:8080/JavaAPIApp/api/Swagger.json`.
 
 ## Publish your API app code to Azure App Service
 
