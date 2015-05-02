@@ -93,6 +93,20 @@ In the portal you manage the features specific to API apps in the **API App** bl
 
 	![][git-url]
 
+## Enable Java runtime on the new API App
+
+For the API App to successfully host an Java app, we have to enable the Java runtime and choose an application server. The portal provides an easy way to do this. We're going to enable Java 7 and Jetty to host our application.
+
+1. In the API App blade, click **API App host**.
+
+	![][api-app-host]
+
+2. Click **Settings > Application settings**. There, enable Java and select Jetty as the application server. Click **Save**
+
+	![][api-app-enable-java]
+
+This will create a webapps/ folder in your site's root. This folder contains all the .war files for your applications.
+
 ## Download and inspect code for a Java API app
 
 In this section, you'll download and take a look at the code provided as part of the JavaAPIApp sample.
@@ -125,6 +139,7 @@ In this section, you'll download and take a look at the code provided as part of
 		beanConfig.setVersion("1.0.0");
 		beanConfig.setBasePath("/JavaAPIApp/api");
 		beanConfig.setResourcePackage("com.microsoft.trysamples.javaapiapp");
+		beanConfig.setSchemes(new String[]{"http", "https"});
 		beanConfig.setScan(true);
 
 	The `setVersion` method set the API version metadata served by Swagger.
@@ -132,6 +147,8 @@ In this section, you'll download and take a look at the code provided as part of
 	The `setBasePath` method sets the base path which Swagger uses to generate the correct metadata. This URL is relative to the base path of your API app.
 
 	The `setResourcePackage` method sets the package which Swagger will scan and include in the Swagger.json file, containing the API metadata.
+
+	The `setSchemes` defines the schemes supported.
 
 	The `setScan` method makes Swagger generate the app documentation.
 
@@ -204,19 +221,19 @@ Now that you have deployed an API to your API app, you can see the API definitio
 
 6. In the Azure portal, go to the **API App** blade for the API app that you created earlier, and click the **Gateway** link.
 
-	![](./media/app-service-api-java-api-app/clickgateway.png)
+	![][click-gateway]
 
 7. In the **Gateway** blade, click **Restart**. You can now close this blade.
 
-	![](./media/app-service-api-java-api-app/gatewayrestart.png)
+	![][restart-gateway]
 
 8. In the **API App** blade, click **API Definition**.
 
-	![](./media/app-service-api-java-api-app/apidef.png)
+	![][api-definition-click]
 
-	The **API Definition** blade shows two Get methods.
+	The **API Definition** blade shows one Get method.
 
-	![](./media/app-service-api-java-api-app/apidefblade.png)
+	![][api-definition-blade]
 
 ## Run the sample application in Azure
 
@@ -246,3 +263,8 @@ You've deployed a Java web application that uses an API app backend to Azure. Fo
 [app-java]: ./media/app-service-api-java-api-app/app-java.png
 [sample-api-app-page]: ./media/app-service-api-java-api-app/sample-api-app-page.png
 [browse-api-app-page]: ./media/app-service-api-java-api-app/browse-api-app-page.png
+[api-app-enable-java]:./media/app-service-api-java-api-app/api-app-enable-java.png
+[click-gateway]:./media/app-service-api-java-api-app/clickgateway.png
+[restart-gateway]:./media/app-service-api-java-api-app/gatewayrestart.png
+[api-definition-click]:/media/app-service-api-java-api-app/apidef.png
+[api-definition-blade]:./media/app-service-api-java-api-app/apidefblade.png
