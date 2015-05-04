@@ -105,13 +105,13 @@ For the API App to successfully host an Java app, we have to enable the Java run
 
 	![][api-app-enable-java]
 
-This will create a webapps/ folder in your site's root. This folder contains all the .war files for your applications.
+This will **enable the Java runtime** on your API App and create a **webapps/** folder in your site's root. This folder will contain all the .war files of your applications.
 
 ## Download and inspect code for a Java API app
 
 In this section, you'll download and take a look at the code provided as part of the JavaAPIApp sample.
 
-1. Download the code in [this GitHub repository](http://go.microsoft.com/fwlink/?LinkID=534023&clcid=0x409). You can either clone the repository or click **Download Zip** to download it as a .zip file. If you download the .zip file, unzip it in your local disk.
+1. Download the code in [this GitHub repository](https://github.com/pkefal/JavaAPIApp). You can either clone the repository or click **Download Zip** to download it as a .zip file. If you download the .zip file, unzip it in your local disk.
 
 2. Navigate to the folder were you unzipped the sample.
 
