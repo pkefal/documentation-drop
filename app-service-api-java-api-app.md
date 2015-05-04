@@ -138,6 +138,7 @@ In this section, you'll download and take a look at the code provided as part of
 
 		beanConfig.setVersion("1.0.0");
 		beanConfig.setBasePath("/JavaAPIApp/api");
+		beanConfig.setHost(websitehostname);
 		beanConfig.setResourcePackage("com.microsoft.trysamples.javaapiapp");
 		beanConfig.setSchemes(new String[]{"http", "https"});
 		beanConfig.setScan(true);
@@ -145,6 +146,8 @@ In this section, you'll download and take a look at the code provided as part of
 	The `setVersion` method set the API version metadata served by Swagger.
 
 	The `setBasePath` method sets the base path which Swagger uses to generate the correct metadata. This URL is relative to the base path of your API app.
+
+	The `setHost` method sets the host on which the API is listening. In this case we're using the `websitehostname` variable which we've assigned a few lines before to dynamically set to `localhost` when running locally or the API App hostname when the application is running in Azure App Service.
 
 	The `setResourcePackage` method sets the package which Swagger will scan and include in the Swagger.json file, containing the API metadata.
 
