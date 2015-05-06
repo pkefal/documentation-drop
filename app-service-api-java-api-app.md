@@ -113,7 +113,7 @@ In this section, you'll download and take a look at the code provided as part of
 
 1. Download the code in [this GitHub repository](https://github.com/pkefal/JavaAPIApp). You can either clone the repository or click **Download Zip** to download it as a .zip file. If you download the .zip file, unzip it in your local disk.
 
-2. Navigate to the folder were you unzipped the sample.
+2. Navigate to the folder were you unzipped the sample and navigate to the `build\libs\` folder.
 
 	![][api-app-folder-browse]
 
@@ -271,4 +271,3 @@ You can try this sample API App at [TryApp Service](http://tryappservice.azure.c
 [restart-gateway]:./media/app-service-api-java-api-app/gatewayrestart.png
 [api-definition-click]:/media/app-service-api-java-api-app/apidef.png
 [api-definition-blade]:./media/app-service-api-java-api-app/apidefblade.png
-
