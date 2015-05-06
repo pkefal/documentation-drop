@@ -4,8 +4,8 @@
 	services="app-service\api"
 	documentationCenter="java"
 	authors="pkefal"
-  manager="",
-  editor=""/>
+	manager="mohisri",
+	editor="jimbe"/>
 
 <tags
 	ms.service="app-service-api"
@@ -29,7 +29,7 @@ Here is a screenshot of the completed application:
 > [AZURE.NOTE] To complete this tutorial, you need a Microsoft Azure account. If you don't have an account, you can [activate your MSDN subscriber benefits](/pricing/member-offers/msdn-benefits-details/) or [sign up for a free trial](/pricing/free-trial/).
  You can also try for free [App Service App Samples](http://tryappservice.azure.com).
 
-1. Log in to the [Azure Portal](https://portal.azure.com).
+1. Log in to the [Azure preview portal](https://portal.azure.com).
 
 2. Click **NEW** at the bottom left of the portal.
 
@@ -47,7 +47,7 @@ Here is a screenshot of the completed application:
 
 	![][api-app-blade]
 
-	If you left **Add to Startboard** check box selected, the portal automatically opens the blade for your API app after it's created. If you cleared the checkbox, click **Notifications** on the portal home page to see the API app creation status, and click the notification to go to the blade for the new API app.
+	If you left the **Add to Startboard** check box selected, the portal automatically opens the blade for your API app after it's created. If you cleared the checkbox, click **Notifications** on the portal home page to see the API app creation status, and click the notification to go to the blade for the new API app.
 
 7. Click **Settings > Application Settings**.
 
@@ -143,15 +143,15 @@ In this section, you'll download and take a look at the code provided as part of
 		beanConfig.setSchemes(new String[]{"http", "https"});
 		beanConfig.setScan(true);
 
-	The `setVersion` method set the API version metadata served by Swagger.
+	The `setVersion` method sets the API version in metadata served by Swagger.
 
-	The `setBasePath` method sets the base path which Swagger uses to generate the correct metadata. This URL is relative to the base path of your API app.
+	The `setBasePath` method sets the base path which Swagger uses to generate the metadata. This URL is relative to the base path of your API app.
 
-	The `setHost` method sets the host on which the API is listening. In this case we're using the `websitehostname` variable which we've assigned a few lines before to dynamically set to `localhost` when running locally or the API App hostname when the application is running in Azure App Service.
+	The `setHost` method sets the host on which the API is listening. In this case we're using the `websitehostname` variable which we've assigned a few lines before to dynamically set to `localhost` when running locally or the API app hostname when the application is running in Azure App Service.
 
 	The `setResourcePackage` method sets the package which Swagger will scan and include in the Swagger.json file, containing the API metadata.
 
-	The `setSchemes` defines the schemes supported.
+	The `setSchemes` method defines the schemes supported.
 
 	The `setScan` method makes Swagger generate the app documentation.
 
@@ -192,7 +192,7 @@ In this section you create a local Git repository and push from that repository 
 
 1. If Git is not installed, install it from [the Git download page](http://git-scm.com/download%20target="_blank").
 
-1. From the command-line, change directories to the sample application directory, then `build\libs` and enter the following commands to initialize a local Git repository.
+1. From the command line, change directories to the sample application directory, then `build\libs` and enter the following commands to initialize a local Git repository.
 
 		git init
 
@@ -250,7 +250,7 @@ The browser displays the home page that you saw earlier when you ran the sample 
 
 You've deployed a Java web application that uses an API app backend to Azure. For more information about using Java in Azure, see the [Java Developer Center](/develop/java/).
 
-* You can try this sample API App at [TryApp Service](http://tryappservice.azure.com)
+You can try this sample API App at [TryApp Service](http://tryappservice.azure.com)
 
 [portal-quick-create]: ./media/app-service-api-java-api-app/portal-quick-create.png
 [portal-create-api]: ./media/app-service-api-java-api-app/portal-create-api.png
@@ -271,3 +271,4 @@ You've deployed a Java web application that uses an API app backend to Azure. Fo
 [restart-gateway]:./media/app-service-api-java-api-app/gatewayrestart.png
 [api-definition-click]:/media/app-service-api-java-api-app/apidef.png
 [api-definition-blade]:./media/app-service-api-java-api-app/apidefblade.png
+
