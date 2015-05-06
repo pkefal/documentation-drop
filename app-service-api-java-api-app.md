@@ -240,11 +240,11 @@ Now that you have deployed an API to your API app, you can see the API definitio
 
 ## Run the sample application in Azure
 
-In the Azure portal, go to the **API App Host** blade for your API app, and click **Browse** .
-
-![][browse-api-app-page]
+In the Azure portal, go to the **API App Host** blade for your API app, and click **Browse**, then add /JavaAPIApp/ to the URL.
 
 The browser displays the home page that you saw earlier when you ran the sample app locally.  
+
+![][browse-api-app-page]
 
 ## Next steps
 
